@@ -1,0 +1,26 @@
+.portfolio{
+  padding-bottom: 120px;
+  &__title{
+    margin-bottom: 80px;
+  }
+  &__link{
+    display: block;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+  }
+  &__item{
+    width: 463px;
+    height: 349px;
+    background: #C2ACBC;
+    border-radius: 44px;
+    padding: 70px 12px;
+    &-img{
+      width: 436px;
+      height: 202px;
+      border-radius: 28px;
+    }
+  }
+}

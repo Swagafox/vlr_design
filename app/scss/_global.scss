@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  font-size: 26px;
+  line-height: 35px;
+  color: $mainfont;
+  @extend %open-400;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  color: $mainfont;
+  font-size: 26px;
+  line-height: 35px;
+  @extend %open-400;
+}
+
+.main{
+  flex-grow: 1;
+}
+
+.title{
+  @extend %open-400;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+

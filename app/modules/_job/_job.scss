@@ -1,0 +1,45 @@
+.job{
+  padding-bottom: 120px;
+  &__title{
+    margin-bottom: 80px;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list-item{
+    position: relative;
+    padding-left: 30px;
+    &::before{
+      content: '';
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #D7C6CA;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &__offer{
+    width: 463px;
+    height: 165px;
+    margin-left: auto;
+    margin-top: 60px;
+    background: #FCFBF7;
+    border-radius: 23px;
+    padding: 32px 41px 28px 55px;
+    position: relative;
+    &::after{
+      content: url('../../images/heart.svg');
+      position: absolute;
+      right: 18px;
+      bottom: -25px;
+    }
+  }
+}
+
+.job__list-item+.job__list-item{
+  margin-top: 11px;
+}

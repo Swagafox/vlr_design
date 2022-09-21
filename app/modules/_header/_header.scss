@@ -1,0 +1,80 @@
+.header{
+  padding: 41px 0 130px;
+  &-top{
+    margin-bottom: 9px;
+    display: flex;
+    justify-content: end;
+    &__link{
+      @extend %mont-400;
+      display: block;
+      font-size: 18px;
+      line-height: 22px;
+      background: #FCFBF7;
+      border-radius: 13px;
+      padding: 10px 22px 10px 52px;
+      position: relative;
+      transition: all .3s;
+      &::before{
+        position: absolute;
+        content: url('../images/insthead.svg');
+        width: 24px;
+        height: 24px;
+        left: 21px;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+  &-offer{
+    display: flex;
+    justify-content: space-between;
+    &__img{
+      background-image: url('../images/mainphotobg.png');
+      background-repeat: no-repeat;
+      background-position:center center;
+      width: 508px;
+      height: 508px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: drop-shadow(7px 8px 14px rgba(0, 0, 0, 0.25));
+    }
+    &__photo{
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &__content{
+      margin-left: 86px;
+    }
+    &__title{
+      font-size: 26px;
+      line-height: 35px;
+      color: #352A2A;
+      margin-top: 140px;
+      margin-bottom: 40px;
+      @extend %open-400;
+    }
+    &__descr{
+      text-transform: uppercase;
+      width: 569px;
+      margin-bottom: 133px;
+      @extend %open-600;
+    }
+  }
+  &-nav{
+    &__list{
+      display: flex;
+      justify-content: space-between;
+    }
+    &__link{
+      text-transform: uppercase;
+    }
+    &__item{
+      transition: all .3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

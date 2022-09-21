@@ -1,0 +1,26 @@
+.about{
+  padding-bottom: 120px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__descr{
+    width: 50%;
+    padding-top: 80px;
+    &-text{
+      &:last-child{
+        margin-top: 50px;
+      }
+    }
+  }
+  &__photo{
+    background-image: url('../images/bgabout.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 508px;
+      height: 508px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
