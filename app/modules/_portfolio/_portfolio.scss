@@ -24,3 +24,30 @@
     }
   }
 }
+
+@media (max-width: 450px) {
+
+  .portfolio__link +.portfolio__link {
+      margin-top: 24px;
+    }
+
+  .portfolio{
+    padding-bottom: 41px;
+    &__title{
+      margin-bottom: 25px;
+    }
+    &__list{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__item{
+      width: 279px;
+      height: 211px;
+      padding: 44px 8px;
+      &-img{
+        width: 263px;
+        height: 122px;
+      }
+    }
+  }
+}

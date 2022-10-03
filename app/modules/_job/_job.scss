@@ -43,3 +43,45 @@
 .job__list-item+.job__list-item{
   margin-top: 11px;
 }
+
+@media (max-width: 420px) {
+  .job{
+    padding-bottom: 40px;
+    &__title{
+      margin-bottom: 23px;
+    }
+    &__content{
+      flex-direction: column;
+    }
+    &__list-item{
+      font-size: 10px;
+      line-height: 0;
+      padding-left: 15px;
+      &::before{
+        width: 7px;
+        height: 7px;
+        background-color:#E3E2DD;
+      }
+    }
+    &__offer{
+      width: 218px;
+      height: 78px;
+      margin: 0 auto;
+      margin-top: 24px;
+      padding: 18px;
+      &::after {
+        content: url('../../images/mobileheart.svg');
+        position: absolute;
+        right: 18px;
+        bottom: -20px;
+        }
+      &-text{
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+  }
+  .job__list-item + .job__list-item{
+    margin-top: 18px;
+  }
+}

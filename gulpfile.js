@@ -66,7 +66,7 @@ function images() {
 function build() {
   return src([
     'app/**/*.html',
-    'app/css/*.min.css',
+    'app/css/*.css',
     'app/js/main.min.js'
   ], {base: 'app'})
   .pipe(dest('dist'))

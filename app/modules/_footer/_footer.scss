@@ -27,7 +27,7 @@
     padding-left: 50px;
     &::before{
       position: absolute;
-      content: url('../images/tg.svg');
+      content: url('images/tg.svg');
       width: 40px;
       height: 40px;
       left: 0;
@@ -36,10 +36,10 @@
   &__link-inst{
     margin-bottom: 27px;
     position: relative;
-    padding-left: 60px;
+    padding-left: 50px;
     &::before{
       position: absolute;
-      content: url('../images/inst.svg');
+      content: url('images/inst.svg');
       width: 40px;
       height: 40px;
       left: 0;
@@ -49,9 +49,10 @@
     margin-bottom: 27px;
     position: relative;
     padding-left: 50px;
+    margin-bottom: 10px;
     &::before{
       position: absolute;
-      content: url('../images/mail.svg');
+      content: url('images/mail.svg');
       width: 40px;
       height: 40px;
       left: 0;
@@ -61,4 +62,52 @@
 
 .footer a{
   display: block;
+}
+
+@media (max-width: 450px) {
+  .footer{
+    padding-bottom: 63px;
+    &__contacts{
+      padding: 24px 34px;
+      &-content{
+        padding-left: 10px;
+      }
+    }
+    &__title{
+      font-size: 14px;
+      line-height: 19px;
+    }
+    &__link-telegram{
+      font-size: 12px;
+      line-height: 16px;
+      margin-bottom: 19px;
+      padding-left: 30px;
+      &::before {
+        content: url('images/tgmobile.svg');
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &__link-inst{
+    margin-bottom: 19px;
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 30px;
+    &::before {
+        content: url('images/instmobile.svg');
+        width: 20px;
+        height: 20px;
+        }
+    }
+    &__link-mail{
+    font-size: 12px;
+    line-height: 16px;
+    padding-left: 30px;
+    &::before {
+        content: url('images/mailmobile.svg');
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 }
