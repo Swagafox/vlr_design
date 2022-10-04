@@ -98,7 +98,8 @@ body {
 body {
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
-  background-size: cover; font-size: 26px;
+  background-size: cover; 
+  font-size: 26px;
   line-height: 35px;
   color: #352A2A;
   display: -webkit-box;
