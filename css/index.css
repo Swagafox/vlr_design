@@ -98,7 +98,7 @@ body {
 body {
   background-image: url("../images/bg.png");
   background-repeat: no-repeat;
-  height: auto;
+  background-size: auto;
   font-size: 26px;
   line-height: 35px;
   color: #352A2A;
